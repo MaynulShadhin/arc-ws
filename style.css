@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* common styles */
+
+.section-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.section-description {
+    color: #727272;
+}
+
+/* header start */
+.header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+/* navbar start */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0px 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #424242;
+    padding: 10px;
+}
+
+/* header content start */
+
+.header-content {
+    margin-top: 100px;
+}
+
+.header-textbox {
+    max-width: 860px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-textbox-title {
+    margin-bottom: 20px;
+    font-size: 4rem;
+}
+
+.header-textbox-description {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding: 20px 25px;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    background: #FF900E;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+/* feature setion start */
+
+.features-section {
+    display: flex;
+    align-items: center;
+    margin: 80px 300px;
+    gap: 75px;
+}
+
+.feature-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-conent-span1 {
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.feature-conent-span2 {
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.feature-conent-title {
+    margin-bottom: 20px;
+}
+
+.feature-conent-description {
+    margin-bottom: 20px;
+}
+
+.experience-section {
+    display: flex;
+    padding: 0px 240px;
+    gap: 140px;
+}
+
+.experience-section-content-title {
+    margin-bottom: 20px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.experience-section-content-description {
+    margin-bottom: 30px;
+}
+
+.experience-section-card {
+    border-radius: 8px;
+    background: #FFF;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.experience-section-card h4 {
+    margin-bottom: 10px
+}
+
+.experience-section-img img {
+    height: 700px;
+}
+
+.experience-card {
+    background-color: #FF900E;
+    border-radius: 8px;
+    width: 342px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    bottom: 75px;
+    right: 110px;
+}
+
+.experience-card h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.experience-card p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* fact section start */
+.facts-section {
+    padding: 0px 240px;
+    margin-bottom: 180px;
+}
+
+.facts-section-title {
+    margin-bottom: 25px;
+}
+
+.facts-section-description {
+    margin-bottom: 100px;
+}
+
+.fact-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardbox {
+    text-align: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+}
+
+.cardbox img {
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.cardbox h2 {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.cardbox p {
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+
+/* sponsor section start */
+
+.sponsor-section {
+    padding: 0px 240px;
+    margin-bottom: 130px;
+}
+
+.sponsor-content {
+    text-align: center;
+}
+
+.sponsor-content-title {
+    margin-bottom: 24px;
+}
+
+.sponsor-content-description {
+    margin-bottom: 50px;
+    padding: 0px 400px;
+}
+
+.sponsor-img {
+    text-align: center;
+}
+
+.sponsor-img img {
+    margin: 0px 50px;
+}
+
+/* footer start */
+
+footer {
+    max-width: 1440px;
+    max-height: 100px;
+    margin: 0px 240px 216px 240px;
+    border-radius: 8px;
+    background: #FFF4E7;
+}
+
+footer p{
+    text-align: center;
+    padding: 39px 0px;
+}
+
+
+
+/* responsive styles */
+
+/* mobile device responsive */
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 20px 0px;
+    }
+
+    .header-content {
+        margin-top: 50px;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .features-section {
+        margin: 50px 20px 50px 20px;
+        flex-direction: column-reverse;
+    }
+
+    .feature-images {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-section {
+        padding: 10px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .experience-section-img img {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .experience-card {
+        position: static;
+    }
+
+    .facts-section {
+        margin: 50px 0px;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    .fact-cards {
+        flex-direction: column;
+    }
+
+    .cardbox {
+        margin-bottom: 20px;
+    }
+
+    .sponsor-section {
+        padding: 0px;
+    }
+
+    .sponsor-content-description {
+        padding: 10px;
+    }
+
+    .sponsor-img img {
+        margin-bottom: 30px;
+    }
+    footer{
+        margin: 0px;
+    }
+}
+
+/* tablet device responsive */
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .header {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin-top: 40px;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .features-section {
+        margin: 50px 20px 50px 20px;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    .feature-images {
+        gap: 20px;
+    }
+
+    .feature-images img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .experience-section {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .experience-section-img img {
+        padding-left: 50px;
+    }
+
+    .experience-card {
+        bottom: 75px;
+        left: 20px;
+    }
+
+    .facts-section {
+        padding: 20px;
+    }
+
+    .facts-section-description {
+        margin-bottom: 50px;
+    }
+
+    .fact-cards {
+        margin-left: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .sponsor-section {
+        padding: 0px;
+    }
+
+    .sponsor-content-description {
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+    footer{
+        margin: 0px;
+    }
+}
