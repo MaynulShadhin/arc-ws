@@ -82,6 +82,11 @@
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: #ffa136;
 }
 
 /* feature setion start */
